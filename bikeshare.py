@@ -87,7 +87,10 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    pd.set_option("display.max_columns", 200)
+    
+    # UNCOMMENT THIS LINE TO SEE ALL COLUMNS OF DATA
+    #pd.set_option("display.max_columns", 200)
+    
     df = pd.read_csv(CITY_DATA[city])
 
     # Convert 'Start Time' column to datetime format
